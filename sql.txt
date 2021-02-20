@@ -1,0 +1,40 @@
+CREATE DATABASE bbs DEFAULT CHARACTER SET utf8;
+
+GRANT ALL ON bbs.* TO 'aj'@'localhost' IDENTIFIED BY 'tod';
+GRANT ALL ON bbs.* TO 'aj'@'127.0.0.1' IDENTIFIED BY 'tod';
+
+CREATE TABLE `customers` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `balance` int(11) NOT NULL,
+   PRIMARY KEY(id),
+   INDEX(email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `customers` (`id`, `name`, `email`, `balance`) VALUES
+(1, 'Adam', 'adam@gmail.com', 10000),
+(2, 'Britney', 'britney@gmail.com', 20000),
+(3, 'Charlie', 'charlie@gmail.com', 40000),
+(4, 'Daniel', 'daniel@gmail.com', 25000),
+(5, 'Edward', 'edward@gmail.com', 9000),
+(6, 'Faith', 'faith@gmail.com', 15000),
+(7, 'Gary', 'gary@gmail.com', 8000),
+(8, 'Henry', 'henry@gmail.com', 35000),
+(9, 'Isabelle', 'isabelle@gmail.com', 22000),
+(10, 'Jacob', 'jacob@gmail.com', 45000);
+
+
+CREATE TABLE `transaction` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `sender` text NOT NULL,
+  `receiver` text NOT NULL,
+  `amount` int(10) NOT NULL,
+  `datetime` datetime NOT NULL DEFAULT current_timestamp(),
+   PRIMARY KEY(id),
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+

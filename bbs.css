@@ -1,0 +1,121 @@
+main{
+    height: 600px;
+    background-size: cover;
+}
+#bg-image{
+    height: 600px;
+    background-size: cover;
+    z-index: -1;
+}
+main>p{
+    background-color:rgba(0,0,0, 0.5);
+    padding: 3%;
+    
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.flex-container1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    justify-content: flex-start;
+}
+footer>a{
+    padding: 1%;
+    text-decoration: none;
+}
+footer>i{
+    padding: 1%;
+}
+footer>div{
+    height:1%;
+}
+footer>div>a{
+    text-decoration: none;
+}
+footer div{
+    background-color:rgba(0,0,0, 0.1);
+    display: inline-block;
+    transform: translateX(625px);
+}
+.active{
+    background:rgba(0,0,0, 0.1);
+    border-radius: 10px;
+    font-weight: 500;
+}
+nav a:hover{
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: 0s;
+}
+div div a{
+	width: 175px;
+    margin-left: 1%;
+    margin-right: 1%;
+	text-align: center;
+}
+span{
+    font-weight: 700;
+}
+#cust{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
+#custo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -125%);
+    font-weight: 500;
+}
+#transfer{
+    position: relative;
+    bottom: 600px;
+}
+section h2{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 300;
+    font-size: 200%;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-image: linear-gradient(rgba(4, 176, 255, 0.63),rgba(0,0,0,0));
+}
+section h2:last-of-type{
+    margin-top: 60px;
+}
+#srch{
+    display: inline-block;
+    position: relative;
+    padding: 1%;
+    font-size:larger;
+    font-weight:400;
+    font-style: italic;
+}
+form input{
+    border-radius: 30px;
+    border-color: rgb(15, 109, 109);
+    outline: none;
+    height: 30px;
+    border-color: #9ecaed;
+    box-shadow: 0 0 15px #9ecaed;
+    
+}
+#transferbut{
+    border-radius: 30px;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 15px #9ecaed;
+}
